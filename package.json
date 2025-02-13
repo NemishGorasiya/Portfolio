@@ -11,10 +11,13 @@
     "lint:stage": "lint-staged"
   },
   "dependencies": {
+    "@react-three/drei": "^10.0.0-rc.2",
+    "@react-three/fiber": "^9.0.0-rc.7",
     "next": "15.1.7",
     "next-themes": "^0.4.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "three": "^0.173.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
