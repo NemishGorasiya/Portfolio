@@ -1,6 +1,6 @@
 "use client";
 
-import ModelViewer from "@/components/models/testModel";
+import { SpinningText } from "@/components/core/spinning_text";
 import ThemeSwitcher from "@/components/theme/themeSwitcher";
 import Image from "next/image";
 
@@ -8,7 +8,15 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <ThemeSwitcher />
-      <ModelViewer />
+      <div className="fixed bottom-0 right-0 h-40 w-40 flex align-center justify-center">
+        <SpinningText
+          radius={5}
+          fontSize={1.2}
+          className="font-medium leading-none select-none"
+        >
+          {`pre-order • pre-order • pre-order • `}
+        </SpinningText>
+      </div>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
